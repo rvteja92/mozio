@@ -15,7 +15,7 @@ class ProviderSerializer(serializers.DocumentSerializer):
 
 class ServiceAreaSerializer(serializers.DocumentSerializer):
     '''Serializer for ServiceArea model'''
-    Provider = ProviderSerializer()
+    provider = ProviderSerializer(read_only=True, source='Provider')
 
     class Meta:
         model = ServiceArea
