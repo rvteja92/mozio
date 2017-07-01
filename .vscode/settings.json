@@ -1,0 +1,7 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "python.venvPath": "/home/ravi/.virtualenvs",
+    "python.pythonPath": "/home/ravi/.virtualenvs/mozio/bin/python",
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintPath": "/home/ravi/.virtualenvs/mozio/bin/pylint"
+}
