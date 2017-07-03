@@ -42,7 +42,7 @@ def deploy_on_console():
         print('Moved to directory ' + blue(os.getcwd()))
         # Build Django project
         with prefix("source /home/ravi/.virtualenvs/mozio/bin/activate"):
-            run('python manage.py migrate')
+            # run('python manage.py migrate')
             run('python manage.py collectstatic --noinput')
 
         sudo("supervisorctl update")
