@@ -29,7 +29,8 @@ def deploy_on_console():
         run('git fetch --all')
         run('git reset --hard origin/master')
         # run('git pull --no-edit origin vishwash')
-        run('pip install -r requirements.txt')
+        with prefix("source /home/ravi/.virtualenvs/mozio/bin/activate"):
+            run('pip install -r requirements.txt')
 
         # Build frontend modules
         # with cd('staticfiles/myproject/src/'):
