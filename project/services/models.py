@@ -5,10 +5,12 @@ from mongoengine import (Document, StringField, EmailField, PolygonField,
 
 class Provider(Document):
     '''Details of service provider and their areas'''
-    name = StringField(max_length=200, required=True)
-    email = EmailField(required=True)
-    phone = StringField(max_length=15, required=True)
-    languages = ListField(StringField(max_length=20, required=True))
+    name = StringField('Provider name', max_length=200, required=True)
+    email = EmailField('Contact email of provider', required=True)
+    phone = StringField('Contact phone of provider', max_length=15,
+                        required=True)
+    languages = ListField(StringField(
+        'List of language names', max_length=20, required=True))
     currency = StringField(max_length=10, required=True)
     meta = {'strict': False}
 

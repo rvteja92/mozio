@@ -24,7 +24,7 @@ from mongoengine import connect
 SECRET_KEY = 'yj)52kkwe@)-&afqd^eib@co-bl01q-c$(yq4nv-27pl2rvz23'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+    # 'rest_framework_docs',
     'rest_framework_mongoengine',
 
     'services'
