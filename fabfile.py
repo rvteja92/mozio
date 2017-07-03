@@ -21,7 +21,7 @@ def log_call(func):
 
 def deploy_on_console():
     with cd('/home/ravi/projects/mozio'):
-        print('Moved to directory ' + blue(os.getcwd))
+        print('Moved to directory ' + blue(os.getcwd()))
         # Clean and pull repo
         # run('git fetch origin vishwash')
         # run('git reset --hard FETCH_HEAD')
@@ -38,7 +38,7 @@ def deploy_on_console():
         #     run('grunt minify')
 
     with cd('/home/ravi/projects/mozio/project'):
-        print('Moved to directory ' + blue(os.getcwd))
+        print('Moved to directory ' + blue(os.getcwd()))
         # Build Django project
         with prefix("source /home/ravi/.virtualenvs/mozio/bin/activate"):
             run('python manage.py migrate')
